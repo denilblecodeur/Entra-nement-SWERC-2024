@@ -8,7 +8,7 @@ while True:
     dist = [[-1] * n for _ in range(n)]
     for _ in range(m):
         u, v, d = map(int,input().split())
-        u-=1;v-=1
+        u-=1; v-=1
         if dist[u][v] == -1 or dist[u][v] > d:
             dist[v][u] = dist[u][v] = d
     for v in range(n):
